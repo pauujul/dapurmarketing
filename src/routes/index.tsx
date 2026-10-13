@@ -60,7 +60,7 @@ function Reveal({ children, className = "" }: { children: ReactNode; className?:
     if (element.getBoundingClientRect().top < window.innerHeight) return;
     element.classList.add("reveal-pending");
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) { element.classList.remove("reveal-pending"); element.classList.add("reveal-visible"); observer.disconnect(); }
+      if (entry?.isIntersecting) { element.classList.remove("reveal-pending"); element.classList.add("reveal-visible"); observer.disconnect(); }
     }, { threshold: 0.08 });
     observer.observe(element);
     return () => observer.disconnect();
