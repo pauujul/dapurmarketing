@@ -6,6 +6,7 @@ import { getContactLinks, getProjectUrl } from "@/config/contact";
 import hero from "@/assets/dapur-hero.jpg.asset.json";
 import coffee from "@/assets/dapur-coffee.jpg.asset.json";
 import dessert from "@/assets/dapur-dessert.jpg.asset.json";
+import sambalConcept from "@/assets/sambal-concept.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -131,7 +132,7 @@ function Index() {
     <section id="proses" className="section"><Reveal className="container"><div className="section-heading"><div><Eyebrow>Cara kami meracik</Eyebrow><h2>Dari kenalan,<br />sampai konten disajikan.</h2></div><p className="section-description">Lima langkah yang jelas. Dikerjakan bersama, dengan tujuan yang sama.</p></div><div className="process-grid">{processes.map((step, i) => <div className="process-item" key={step.title}><span className="process-step">0{i + 1}</span><h3>{step.title}</h3><p>{step.text}</p></div>)}</div></Reveal></section>
 
     <section id="karya" className="section dark-section work-section"><div className="container"><Reveal className="section-heading"><div><Eyebrow>Dari dapur kami</Eyebrow><h2>Rasa yang punya cerita.</h2></div><p className="section-description">Tiga contoh konsep kreatif untuk mengeksplorasi karakter brand F&B. Bukan proyek klien.</p></Reveal><div className="work-grid">
-      <Reveal className="work-card"><div className="work-visual"><div className="sambal-art"><Flame /><strong>SAMBAL<br />STUDIO.</strong><em>Berani rasa. Berani beda.</em></div><span className="concept-tag">Contoh konsep</span></div><div className="work-meta"><div><h3>Sambal Studio</h3><p>Arah visual · Kampanye peluncuran</p></div><span className="work-arrow"><Sparkles size={15} /></span></div></Reveal>
+      <Reveal className="work-card"><div className="work-visual"><img src={sambalConcept} alt="Konsep Sambal Studio: rice bowl ayam sambal dengan nasi, mentimun, dan kemangi" className="work-image" loading="lazy" width={1024} height={1024} /><span className="concept-tag">Contoh konsep</span></div><div className="work-meta"><div><h3>Sambal Studio</h3><p>Arah visual · Kampanye peluncuran</p></div><span className="work-arrow"><Sparkles size={15} /></span></div></Reveal>
       <Reveal className="work-card"><div className="work-visual"><img src={coffee.url} alt="Konsep Pagi Coffee: kopi dan suasana hangat di meja kafe" className="work-image" loading="lazy" /><span className="concept-tag">Contoh konsep</span></div><div className="work-meta"><div><h3>Pagi Coffee</h3><p>Media sosial · Cerita keseharian</p></div><span className="work-arrow"><Camera size={15} /></span></div></Reveal>
       <Reveal className="work-card"><div className="work-visual"><img src={dessert.url} alt="Konsep Lapis Lokal: sajian dessert dengan karakter warna dan rasa lokal" className="work-image" loading="lazy" /><span className="concept-tag">Contoh konsep</span></div><div className="work-meta"><div><h3>Lapis Lokal</h3><p>Identitas visual · Cerita rasa lokal</p></div><span className="work-arrow"><Camera size={15} /></span></div></Reveal>
     </div></div></section>
