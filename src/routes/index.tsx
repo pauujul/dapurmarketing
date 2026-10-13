@@ -103,7 +103,6 @@ function Index() {
           </div>
           <div className="hero-visual">
             <img className="hero-photo" src={hero.url} alt="Rice bowl ayam sambal dengan telur, disajikan hangat untuk konten kuliner" fetchPriority="high" />
-            <div className="photo-note"><Sparkles /><span>Rasa jadi cerita.</span><span>Cerita jadi konten.</span></div>
             <div className="photo-label"><ChefHat /><div><strong>Diolah di dapur kreatif kami.</strong><span>Rasa · Cerita · Strategi</span></div></div>
           </div>
         </div>
