@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep this profile as one index route with section anchors because the requested experience is a single scrolling page.
+- Derive every contact link and project CTA from src/config/contact.ts so empty channels remain hidden everywhere.
+- Define visual styles and semantic tokens in src/styles.css; use Button variants for interactive actions to keep the brand consistent.
