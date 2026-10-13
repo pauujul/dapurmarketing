@@ -96,7 +96,6 @@ h1 { font-size: 59px; line-height: 1.13; font-weight: 800; margin: 0; }
 .photo-label > svg { color: var(--primary); width: 26px; height: 26px; }
 .photo-label strong { display: block; font-size: 13px; }
 .photo-label span { display: block; color: var(--muted-foreground); font-size: 10px; margin-top: 4px; }
-.photo-note { position: absolute; top: -22px; right: -14px; background: var(--butter); width: 97px; height: 97px; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; font-size: 10px; font-weight: 800; transform: rotate(12deg); }
 .hero-bottom { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 24px; margin-top: 64px; font-size: 10px; font-weight: 600; color: var(--muted-foreground); }
 .hero-bottom span { display: flex; align-items: center; gap: 8px; }
 .section { padding-block: 92px; }
@@ -231,8 +230,6 @@ h2 { font-size: 38px; line-height: 1.23; font-weight: 800; margin: 0; }
   .tagline { font-size: 10px; margin-top: 20px; }
   .hero-visual { width: min(380px, calc(100% - 28px)); margin: 9px auto 0; }
   .hero-photo { aspect-ratio: 1.15; border-radius: 28px; }
-  .photo-note { width: 75px; height: 75px; font-size: 8px; right: -12px; top: -15px; }
-  .photo-note svg { width: 18px; }
   .photo-label { left: -8px; bottom: 14px; padding: 12px 15px; border-radius: 14px; }
   .photo-label strong { font-size: 11px; }
   .photo-label span { font-size: 9px; }
